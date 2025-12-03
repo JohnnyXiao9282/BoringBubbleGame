@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build and run BubbleGame with SFML",
+			"type": "shell",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++11",
+				"-g",
+				"BubbleGame.cpp",
+				"-o",
+				"BubbleGame",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lsfml-graphics",
+				"-lsfml-window",
+				"-lsfml-system"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "build and run BubbleGame with SFML (C++17)",
+			"type": "shell",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"BubbleGame.cpp",
+				"-o",
+				"BubbleGame",
+				"-I/opt/homebrew/include",
+				"-L/opt/homebrew/lib",
+				"-lsfml-graphics",
+				"-lsfml-window",
+				"-lsfml-system"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
