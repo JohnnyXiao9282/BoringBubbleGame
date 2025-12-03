@@ -2,7 +2,7 @@
 #include <ctime>
 #include <cstdlib>
 
-class Game {
+class BubbleGame {
 private:
     sf::RenderWindow window;
     sf::CircleShape player;
@@ -14,7 +14,7 @@ private:
     int score = 0;
 
 public:
-    Game() 
+    BubbleGame() 
         : window(sf::VideoMode(800, 600), "Simple SFML Game") 
     {
         std::srand(std::time(nullptr));
@@ -89,7 +89,7 @@ private:
 };
 
 int main() {
-    Game game;
+    BubbleGame game;
     game.run();
     return 0;
 }
