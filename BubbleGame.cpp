@@ -89,7 +89,8 @@ private:
 };
 
 int main() {
-    BubbleGame game;
-    game.run();
+    BubbleGame* game = new BubbleGame();
+    game->run();
+    delete game;
     return 0;
 }
